@@ -22,12 +22,18 @@ Below are some screenshots of the UI:
    ```
    pip install -r requirements.txt
    ```
+4. Download the dataset using `curl` and unzip it into the `datasets` directory.
+
+```sh
+curl -o datasets/listings.csv.gz https://data.insideairbnb.com/united-kingdom/england/london/2024-03-19/data/listings.csv.gz
+gunzip datasets/listings.csv.gz
+
+```
 4. Run the desired script using Python or start the Streamlit server for interactive visualization.
 
 ## Running the Scripts
 To run the scripts, use the following command:
 ```
-
  streamlit run streamlit_app.py
 ```
 
@@ -54,5 +60,3 @@ All the datasets used are included in the repository within the `/datasets` fold
 ## Notes
 - Ensure that the datasets are in the `/datasets` folder for the scripts to run correctly.
 
-
-# Mohammed Benlamlih :) 
